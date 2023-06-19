@@ -1,0 +1,8 @@
+ios tunnel commmand for expo- expo-cli start --tunnel     
+
+components are compiled not logic. so react native compiles to the platform you are building to?
+logic isnt compiled it is running on a javascript process, react native manages this and it allows you to talk to the platform
+
+handle state in components not in parent.
+
+android ripple needs to be added as style prop to ios
