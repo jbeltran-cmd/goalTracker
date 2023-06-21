@@ -30,7 +30,6 @@ export default function App() {
   }
   return (
     <>
-      {" "}
       <StatusBar style="light" />
       <View style={styles.appContainer}>
         <Button
