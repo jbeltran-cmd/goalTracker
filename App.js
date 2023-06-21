@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { StyleSheet, View, FlatList, Button } from "react-native";
+import { StyleSheet, View, FlatList, Button, SafeAreaView, ImageBackground } from "react-native";
 import GoalItem from "./components/goalItem";
 import GoalInput from "./components/goalInput";
 import { StatusBar } from "expo-status-bar";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function App() {
   const [courseGoals, setCourseGoals] = useState([]);
@@ -29,8 +30,9 @@ export default function App() {
     });
   }
   return (
-    <>
-      <StatusBar style="light" />
+    <LinearGradient colors={["#4c669f", "#3b5998"]} style={styles.rootContainer}>
+      <ImageBackground source={require("./assets/space-image.jpg")} style={styles.appContainer} imageStyle={{opacity: .65}}>
+      <SafeAreaView />
       <View style={styles.appContainer}>
         <Button
           title="Add New Goal"
@@ -61,12 +63,16 @@ export default function App() {
             }}
           />
         </View>
-      </View>
-    </>
+        </View>
+      </ImageBackground>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
+  rootContainer: {
+    flex: 1,
+  },
   appContainer: {
     flex: 1,
     paddingTop: 50,

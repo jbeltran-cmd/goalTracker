@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     borderRadius: 6,
   },
   goalText: {
-    color: "#a85cdb",
+    color: "#1b4d80",
     padding: 8,
   },
   pressedItem: {

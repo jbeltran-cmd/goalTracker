@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     padding: 16,
-    backgroundColor: "#a85cdb",
+    backgroundColor: "#1b4d80",
   },
   textInput: {
     borderWidth: 1,
